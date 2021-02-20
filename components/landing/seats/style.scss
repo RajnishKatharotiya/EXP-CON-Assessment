@@ -1,0 +1,116 @@
+.seat-content_wrapper{
+    position: relative;
+    .front-content{
+        position: relative;
+        background-color: $yellow;
+        z-index: 1;
+    }
+    .back-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-image: url('/images/outfoxing.png');
+        z-index: 0;
+    }
+
+    .seat_section-container{
+        height: 1080px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: $white;
+        position: relative;
+        overflow: hidden;
+
+        .right-cta-btn{
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 93px 83px 0 0 ;
+        }
+        
+        .content{
+            margin: auto;   
+            display: flex; 
+            padding-top: 113px;
+            .left-section{
+                margin: auto 132px auto 250px;
+                .circle-one{
+                    width: 360px;
+                    height: 368px;
+                    background-color: $dark-back;
+                    display: flex;
+                    border-radius: 50%;
+                }
+                .circle-two{
+                    width: 544px;
+                    height: 556px;
+                    background-color: $dark-back;
+                    display: flex;
+                    border-radius: 50%;
+                    margin-left: -250px;
+                    margin-top: -150px;
+                }
+                p{
+                    margin: auto;
+                    color: $yellow;
+                    font-size: 58px;
+                    line-height: 70px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }  
+            }
+            .circle-three{
+                width: 586px;
+                height: 598px;
+                background-color: $dark-back;
+                display: flex;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                transform: translateX(30%) translateY(30%);
+                p{
+                    margin: auto;
+                    color: $yellow;
+                    font-size: 39px;
+                    line-height: 47px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                } 
+            }
+            .right-section{
+                margin: auto;
+                &.aqua{
+                    .title, .sub-title{
+                        color: aqua;
+                    }
+                }
+                .title{
+                    font-size: 74px;
+                    line-height: 90px;
+                    margin-bottom: 27px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-align: left;
+                }
+
+                .sub-title{
+                    font-size: 51px;
+                    line-height: 61px;
+                    width: 830px;
+                    margin: auto;
+                    text-align: left;
+                    margin-bottom: 41px;
+                    font-weight: 300;
+                    color: $dark-back;
+                }
+            }
+        }
+    }
+
+}

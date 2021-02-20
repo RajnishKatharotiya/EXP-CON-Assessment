@@ -1,0 +1,36 @@
+.hero-container{
+    height: 1080px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent url('/images/hero-back.png') 0% 0% no-repeat padding-box;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: $white;
+    top: 0;
+    left: 0;
+    position: relative;
+    
+    .content{
+        padding-top: 200px;
+        margin: auto;    
+        .title{
+            font-size: 65px;
+            line-height: 77px;
+            margin-bottom: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .sub-title{
+            font-size: 32px;
+            line-height: 44px;
+            width: 820px;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 43px;
+        }
+    }
+}

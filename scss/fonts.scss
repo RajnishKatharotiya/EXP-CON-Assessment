@@ -1,0 +1,32 @@
+/* ******     Font Family : Tex Gyre ~ Helvetica Neue     ******** */
+
+
+  @font-face {
+    font-family: 'TexGyre';
+    font-style: italic;
+    font-weight: 700;
+    src: url('/fonts/Tex-Gyre-Heros/texgyreheros-bolditalic.otf');
+  }
+  
+  @font-face {
+    font-family: 'TexGyre';
+    font-weight: 700;
+    src: url('/fonts/Tex-Gyre-Heros/texgyreheros-bold.otf');
+  }
+  
+  @font-face {
+    font-family: 'TexGyre';
+    font-style: italic;
+    font-weight: 300;
+    src: url('/fonts/Tex-Gyre-Heros/texgyreheros-italic.otf');
+  }
+  
+  @font-face {
+    font-family: 'TexGyre';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/fonts/Tex-Gyre-Heros/texgyreheros-regular.otf');
+  }
+  
+  /* *** End : font family Tex Gyre ~ Helvetica Neue  ****/
+  

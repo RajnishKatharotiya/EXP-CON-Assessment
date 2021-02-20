@@ -1,0 +1,21 @@
+{
+    "presets": ["next/babel"],
+    "plugins": [
+      [
+          "module-resolver",
+          {
+              "root": ["."],
+              "alias": {
+                  "utils": "./utils",
+                  "components": "./components",
+                  "containers": "./containers",
+                  "shared": "./components/shared",
+                  "widgets": "./components/widgets",
+                  "images" : "./public/images",
+                  "icons" : "./icons"
+                  // add reducers and actions after redux implementation
+              }
+          }
+      ]
+    ]
+  }

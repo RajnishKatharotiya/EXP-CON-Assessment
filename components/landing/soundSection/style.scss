@@ -1,0 +1,56 @@
+.sound_section-container{
+    height: 1080px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $red;
+    color: $white;
+    position: relative;
+
+
+    .right-cta-btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 93px 83px 0 0 ;
+    }
+    
+    .content{
+        padding-top: 85px;
+        margin: auto;   
+        display: flex; 
+        .left-section{
+            margin: auto 120px auto 0;
+            .title{
+                font-size: 74px;
+                line-height: 90px;
+                margin-bottom: 27px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: left;
+            }
+
+            .sub-title{
+                font-size: 51px;
+                line-height: 61px;
+                width: 879px;
+                margin: auto;
+                text-align: left;
+                margin-bottom: 41px;
+                font-weight: 300;
+                color: $dark-back;
+            }
+        }
+        .right-section{
+            display: flex;
+            position: relative;
+            .left-sound{
+                margin-top: 0;
+                height: max-content;
+            }
+            .right-sound{
+                margin-top: 217px;
+            }
+        }
+    }
+}

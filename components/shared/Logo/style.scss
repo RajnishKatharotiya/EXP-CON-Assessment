@@ -1,0 +1,121 @@
+.logo-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.logo-container{
+    width: 598px;
+    height: 540px;
+    position: relative;
+    padding: 93px 0 0 83px ;
+    overflow: hidden;
+    .logo {
+        display: flex;
+        margin-bottom: 40px;
+        height: 56px;
+        svg {
+            width: 34px;
+            height: 34px;
+            margin: auto 0;
+            cursor: pointer;
+        }
+        h2 {
+            font-size: 48px;
+            margin: auto 38px;
+            font-weight: 300;
+        }
+    }
+    .nav {
+        list-style: none;
+        padding-left: 0;
+        color: $white;
+        li {
+            font-size: 47px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 56px;
+            transition: $transition;
+            cursor: pointer;
+            width: max-content;
+            -webkit-animation: burgerBlobText 0.9s ease-in;
+            -moz-animation: burgerBlobText 0.9s ease-in;
+            animation: burgerBlobText 0.9s ease-in;
+        }
+    }
+    &.visibleNav .back-blog{
+        width: 682px;
+        height: 682px;
+    }
+    .back-blog{
+        position: absolute;
+        top: -142px;
+        left: -84px;
+        width: 0;
+        height: 0;
+        background: $dark-back 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px $burger-shadow;
+        opacity: 1;
+        border-radius: 50%;
+        z-index: -1;
+        transition: $transition;
+    }
+
+    &.visibleNav.red {
+       .logo, .nav li:hover{
+            color: $red;
+        }
+    }
+
+    &.visibleNav.yellow {
+        .logo, .nav li:hover{
+            color: $yellow;
+        }
+    }
+
+    &.visibleNav.aqua {
+        .logo, .nav li:hover{
+            color: $aqua;
+        }
+    }
+
+    &.visibleNav.dark{
+        color: $white;
+        .nav li:hover{
+            color: $dark-back;
+        }
+        .back-blog {
+            background-color: $aqua;
+        }
+    }
+}
+
+
+
+@-webkit-keyframes burgerBlobText {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes burgerBlobText {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes burgerBlobText {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
